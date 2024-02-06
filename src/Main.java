@@ -6,13 +6,13 @@ public class Main {
         boolean clockIn;
         Scanner scnr = new Scanner(System.in);
 
-        //Initial Sequence
         System.out.println("Would you like to Clock In?");
         clockIn = scnr.nextBoolean();
 
         if (clockIn) {
             userTimeAndDate.timeAndDate();
             clockInTask.clockIn();
+            clockOut.timeAndDateOut();
 
         } else {
             System.out.println("Closing. See you next Shift.");
