@@ -5,13 +5,14 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class clockOut {
-    public static void timeAndDateOut() {
+    public static String timeAndDateOut() {
         LocalTime timeOfPunch = LocalTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
 
         String formattedTime = timeOfPunch.format(formatter);
         SimpleDateFormat ft = new SimpleDateFormat("MM-dd-yyyy");
 
-        System.out.println("You have clocked out at : " + formattedTime);
+        System.out.println("You have clocked out at: " + formattedTime);
+        return formattedTime;
     }
 }

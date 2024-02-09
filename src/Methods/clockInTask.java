@@ -1,16 +1,12 @@
 package Methods;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class clockInTask {
 
     private static int seconds = 0;
-    public static void clockIn() {
+    public static double clockIn() {
         Timer timer = new Timer();
 
         // Figure out how to reduce memory usage by allowing back-end loading.
@@ -35,7 +31,9 @@ public class clockInTask {
         System.out.printf("Had a good shift? You were at work for: %d hours " +
                 "and %d minutes%n", hours, minutes);
 
+        double decimalTimeWorked = hours + (minutes / 60.0) + (remainingSeconds / 60.0);
 
+return decimalTimeWorked;
     }
 
     // Second counter

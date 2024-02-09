@@ -12,19 +12,17 @@ public class Main {
 
         if (clockIn) {
             userTimeAndDate.timeAndDate();
-            clockInTask.clockIn();
-            clockOut.timeAndDateOut();
+            double decimalTimeWorked = clockInTask.clockIn();
+            String punchOutTime = clockOut.timeAndDateOut(); // Capture punch out time
 
-            System.out.println("Want to add this punch to your calendar?");
+            System.out.println("Want to save this punch?");
             savePunch = scnr.nextBoolean();
             if (savePunch) {
-                SaveUserPunches.savePunches();
+                SaveUserPunches.savePunches(savePunch, decimalTimeWorked); // Pass both parameters to savePunches
             }
-
         } else {
             System.out.println("Closing. See you next Shift.");
             System.exit(0);
         }
     }
 }
-
