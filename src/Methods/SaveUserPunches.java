@@ -12,22 +12,21 @@ public class SaveUserPunches {
                     "Rodr1guezEmi123..d" // Database password
             );
 
-            // Create a statement
-            Statement statement = connection.createStatement();
+            // Create a prepared statement with parameterized query
+            String insertQuery = "INSERT INTO punches (decimal_time_worked) VALUES (?)";
+            PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
 
-            // Construct an INSERT statement to save punch data
-            String insertQuery = String.format(
-                    "INSERT INTO punches (decimal_time_worked) VALUES (%f)", decimalTimeWorked
-            );
+            // Set the double value as parameter
+            preparedStatement.setDouble(1, decimalTimeWorked);
 
             // Execute the INSERT statement
-            int rowsAffected = statement.executeUpdate(insertQuery);
+            int rowsAffected = preparedStatement.executeUpdate();
 
             // Print the number of rows affected (optional)
             System.out.println("Rows affected: " + rowsAffected);
 
             // Close the resources
-            statement.close();
+            preparedStatement.close();
             connection.close();
         } catch(SQLException e) {
             e.printStackTrace();
