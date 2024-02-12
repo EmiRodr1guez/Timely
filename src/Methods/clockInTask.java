@@ -13,8 +13,8 @@ public class clockInTask {
         timer.scheduleAtFixedRate(new ClockInTask(), 1000, 1000);
 
         // Allow the timer to run until the user decides to exit. Also displays warning
-        System.out.println("Clocked In. Press Enter to exit. Minimize this screen to ensure " +
-                "you do not accidentally stop.");
+        System.out.println(ansiColors.BLUE + ansiColors.BLACK_BACKGROUND + "Clocked In. Press Enter to exit. Minimize this screen to ensure " +
+                "you do not accidentally stop." + ansiColors.RESET);
         try {
             System.in.read();
         } catch (Exception e) {
@@ -27,11 +27,14 @@ public class clockInTask {
         int remainingSeconds = seconds % 3600;
         int minutes = remainingSeconds / 60;
 
-
-        System.out.printf("Had a good shift? You were at work for: %d hours " +
-                "and %d minutes%n", hours, minutes);
-
         double decimalTimeWorked = hours + (minutes / 60.0) + (remainingSeconds / 60.0);
+
+
+        System.out.printf( ansiColors.GREEN + ansiColors.BLACK_BACKGROUND + "Had a good shift? You were at work for: %d hours " +
+                "and %d minutes%n", hours, minutes);
+        System.out.print(ansiColors.RESET);
+
+
 
 return decimalTimeWorked;
     }
