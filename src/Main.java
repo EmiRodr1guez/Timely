@@ -4,6 +4,7 @@ import java.util.Scanner;
 import Methods.PunchTasks.SaveUserPunches;
 import Methods.PunchTasks.clockInTask;
 import Methods.PunchTasks.clockOut;
+import Methods.PunchTasks.microTasks.*;
 import Methods.PunchTasks.userTimeAndDate;
 import Methods.SessionIDs.createSessionId;
 import Methods.SessionIDs.newSessionID;
@@ -19,6 +20,7 @@ public class Main {
         boolean clockIn;
         boolean savePunch;
         boolean userRegistered;
+        String sessionId = null;
         Scanner scnr = new Scanner(System.in);
         System.out.println(ansiColors.BLACK_BACKGROUND + ansiColors.CYAN + "                                ___           ___                               \n" +
                 "                               /\\  \\         /\\__\\                              \n" +
@@ -45,12 +47,17 @@ public class Main {
                     "Rodr1guezEmi123..d" // Database password
             );
 
-            // Assuming you have received the necessary parameters (username and email) from user input or elsewhere
+
+
+            //placeholder
             String username = "exampleUser";
             String email = "example@example.com";
 
+            sessionId = retrieveSessionID.getSessionID(connection, username, email);
+
+
             // Check if the user has a session ID
-            String sessionId = retrieveSessionID.getSessionID(connection, username, email);
+            sessionId = retrieveSessionID.getSessionID(connection, username, email);
             if (sessionId != null) {
                 System.out.println("You are already logged in. Your session ID is: " + sessionId);
                 // Create a user object with the retrieved session ID
@@ -72,7 +79,6 @@ public class Main {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-
             if (connection != null) {
                 try {
                     connection.close();
@@ -91,16 +97,19 @@ public class Main {
         //Clock in sequence
         if (clockIn) {
             userTimeAndDate.timeAndDate();
+            Object sqlTimeIn = new userTimeIn();
+            String sqlDate = userDate.sqlDate();
             System.out.println("");
             double decimalTimeWorked = clockInTask.clockIn();
             System.out.println("");
             String punchOutTime = clockOut.timeAndDateOut(); // Capture punch out time
+            Object sqlTimeOut = new userTimeOut();
 
             //Save the punch
             System.out.println(ansiColors.GREEN + ansiColors.BLACK_BACKGROUND + "Want to save this punch?" + ansiColors.RESET);
             savePunch = scnr.nextBoolean();
             if (savePunch) {
-                SaveUserPunches.savePunches(savePunch, decimalTimeWorked); // Pass both parameters to savePunches
+                SaveUserPunches.savePunches((String) sqlTimeIn, (String) sqlTimeOut, (String) sqlDate, savePunch, decimalTimeWorked, sessionId);
             }
         } else {
             System.out.println("Closing. See you next Shift.");
