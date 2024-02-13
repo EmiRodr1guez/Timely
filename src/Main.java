@@ -19,23 +19,18 @@ public class Main {
     public static void main(String[] args) {
         boolean clockIn;
         boolean savePunch;
-        boolean userRegistered;
         String sessionId = null;
         Scanner scnr = new Scanner(System.in);
-        System.out.println(ansiColors.BLACK_BACKGROUND + ansiColors.CYAN + "                                ___           ___                               \n" +
-                "                               /\\  \\         /\\__\\                              \n" +
-                "      ___         ___         |::\\  \\       /:/ _/_                       ___   \n" +
-                "     /\\__\\       /\\__\\        |:|:\\  \\     /:/ /\\__\\                     /|  |  \n" +
-                "    /:/  /      /:/__/      __|:|\\:\\  \\   /:/ /:/ _/_   ___     ___     |:|  |  \n" +
-                "   /:/__/      /::\\  \\     /::::|_\\:\\__\\ /:/_/:/ /\\__\\ /\\  \\   /\\__\\    |:|  |  \n" +
-                "  /::\\  \\      \\/\\:\\  \\__  \\:\\~~\\  \\/__/ \\:\\/:/ /:/  / \\:\\  \\ /:/  /  __|:|__|  \n" +
-                " /:/\\:\\  \\      ~~\\:\\/\\__\\  \\:\\  \\        \\::/_/:/  /   \\:\\  /:/  /  /::::\\  \\  \n" +
-                " \\/__\\:\\  \\        \\::/  /   \\:\\  \\        \\:\\/:/  /     \\:\\/:/  /   ~~~~\\:\\  \\ \n" +
-                "      \\:\\__\\       /:/  /     \\:\\__\\        \\::/  /       \\::/  /         \\:\\__\\\n" +
-                "       \\/__/       \\/__/       \\/__/         \\/__/         \\/__/           \\/__/");
 
-        System.out.println("Do you have an account with us?");
-        userRegistered = scnr.nextBoolean();
+        System.out.println(ansiColors.BLACK_BACKGROUND + ansiColors.CYAN +
+                "████████╗██╗███╗   ███╗███████╗██╗  ██╗   ██╗\n" +
+                "╚══██╔══╝██║████╗ ████║██╔════╝██║  ╚██╗ ██╔╝\n" +
+                "   ██║   ██║██╔████╔██║█████╗  ██║   ╚████╔╝ \n" +
+                "   ██║   ██║██║╚██╔╝██║██╔══╝  ██║    ╚██╔╝  \n" +
+                "   ██║   ██║██║ ╚═╝ ██║███████╗███████╗██║   \n" +
+                "   ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚═╝   ");
+
+        System.out.println("Welcome to SavePunch. The best way to keep track of your time." + ansiColors.RESET);
 
         Connection connection = null; // Initialize the connection variable outside the try-catch block
 
@@ -47,14 +42,19 @@ public class Main {
                     "Rodr1guezEmi123..d" // Database password
             );
 
-            //placeholder
-            String username = "exampleUser";
-            String email = "example@example.com";
+            // Placeholder for user input
+            System.out.println("What is your e-mail and username?");
+            System.out.print("Email: ");
+            String email = scnr.nextLine();
+            System.out.print("Username: ");
+            String username = scnr.nextLine();
 
+            user user = new user(username, email, sessionId);
+
+            // Retrieve session ID if exists
             sessionId = retrieveSessionID.getSessionID(connection, username, email);
 
             // Check if the user has a session ID
-            sessionId = retrieveSessionID.getSessionID(connection, username, email);
             if (sessionId != null) {
                 System.out.println("You are already logged in. Your session ID is: " + sessionId);
                 // Create a user object with the retrieved session ID
@@ -67,7 +67,8 @@ public class Main {
                 String generatedSessionId = newSessionID.setSessionID(connection, createSessionId.getSaltString(), username, email);
                 if (!generatedSessionId.isEmpty()) {
                     System.out.println("New session ID generated and assigned to you: " + generatedSessionId);
-                    user currentUser = new user(username, email, generatedSessionId);
+                    sessionId = generatedSessionId;
+                    user currentUser = new user(username, email, sessionId);
                     // Proceed with other actions, such as logging the user in or continuing with the application flow
                 } else {
                     System.out.println("Failed to generate a new session ID. Please try again later.");
@@ -89,7 +90,7 @@ public class Main {
         System.out.println("");
         clockIn = scnr.nextBoolean();
 
-        //Clock in sequence
+        // Clock in sequence
         if (clockIn) {
             // Retrieve current time and date
             userTimeAndDate.timeAndDate();
