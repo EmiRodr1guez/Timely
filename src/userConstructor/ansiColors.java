@@ -1,4 +1,4 @@
-package Methods;
+package userConstructor;
 
 public class ansiColors {
         // Reset color

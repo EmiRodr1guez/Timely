@@ -1,4 +1,6 @@
-package Methods;
+package Methods.PunchTasks;
+
+import userConstructor.ansiColors;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -12,7 +14,7 @@ public class clockInTask {
         // Figure out how to reduce memory usage by allowing back-end loading.
         timer.scheduleAtFixedRate(new ClockInTask(), 1000, 1000);
 
-        // Allow the timer to run until the user decides to exit. Also displays warning
+        // Allow the timer to run until the userConstructor.user decides to exit. Also displays warning
         System.out.println(ansiColors.BLUE + ansiColors.BLACK_BACKGROUND + "Clocked In. Press Enter to exit. Minimize this screen to ensure " +
                 "you do not accidentally stop." + ansiColors.RESET);
         try {

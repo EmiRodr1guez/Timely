@@ -1,4 +1,6 @@
-package Methods;
+package Methods.PunchTasks;
+
+import userConstructor.ansiColors;
 
 import java.time.LocalTime;
 import java.util.*;
@@ -6,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 
 
-// Gets user current Formatted date and Time.
+// Gets userConstructor.user current Formatted date and Time.
 public class userTimeAndDate {
     public static void timeAndDate() {
         LocalTime timeOfPunch = LocalTime.now();
