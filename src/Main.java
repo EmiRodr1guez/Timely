@@ -47,14 +47,11 @@ public class Main {
                     "Rodr1guezEmi123..d" // Database password
             );
 
-
-
             //placeholder
             String username = "exampleUser";
             String email = "example@example.com";
 
             sessionId = retrieveSessionID.getSessionID(connection, username, email);
-
 
             // Check if the user has a session ID
             sessionId = retrieveSessionID.getSessionID(connection, username, email);
@@ -88,33 +85,29 @@ public class Main {
             }
         }
 
-
-        System.out.println(ansiColors.GREEN + ansiColors.BLACK_BACKGROUND + "Would you like to Clock" +
-                " In?" + ansiColors.RESET);
+        System.out.println(ansiColors.GREEN + ansiColors.BLACK_BACKGROUND + "Would you like to Clock In?" + ansiColors.RESET);
         System.out.println("");
         clockIn = scnr.nextBoolean();
 
         //Clock in sequence
         if (clockIn) {
+            // Retrieve current time and date
             userTimeAndDate.timeAndDate();
-            Object sqlTimeIn = new userTimeIn();
-            String sqlDate = userDate.sqlDate();
-            System.out.println("");
+            // Perform clock in task
             double decimalTimeWorked = clockInTask.clockIn();
             System.out.println("");
-            String punchOutTime = clockOut.timeAndDateOut(); // Capture punch out time
-            Object sqlTimeOut = new userTimeOut();
-
-            //Save the punch
+            // Capture punch out time
+            String punchOutTime = clockOut.timeAndDateOut();
+            // Ask user if they want to save the punch
             System.out.println(ansiColors.GREEN + ansiColors.BLACK_BACKGROUND + "Want to save this punch?" + ansiColors.RESET);
             savePunch = scnr.nextBoolean();
             if (savePunch) {
-                SaveUserPunches.savePunches((String) sqlTimeIn, (String) sqlTimeOut, (String) sqlDate, savePunch, decimalTimeWorked, sessionId);
+                // Save the punch to the database
+                SaveUserPunches.savePunches(sessionId, punchOutTime, punchOutTime, userDate.sqlDate(), true, decimalTimeWorked);
             }
         } else {
             System.out.println("Closing. See you next Shift.");
             System.exit(0);
-
         }
     }
 }
