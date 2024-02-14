@@ -11,6 +11,7 @@ import Methods.SessionIDs.newSessionID;
 import Methods.SessionIDs.retrieveSessionID;
 import userConstructor.user;
 import userConstructor.ansiColors;
+import Methods.*;
 
 public class Main {
 
