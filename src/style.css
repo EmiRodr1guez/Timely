@@ -1,0 +1,35 @@
+.side_ankerpane {
+    -fx-background-color: #48426b;
+    -fx-border-color: #2207bb;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+
+}
+
+.innerpane {
+    -fx-background-color: #F0C38E;
+    -fx-border-color: #F0C38E;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+
+.most_inner_pane {
+    -fx-background-color: #eaae67;
+    -fx-border-color: #EAAE67FF;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+
+.btn_home {
+    -fx-background-color: #312c51;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+}

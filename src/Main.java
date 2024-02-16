@@ -1,6 +1,5 @@
 import java.sql.*;
 import java.util.Scanner;
-
 import Methods.PunchTasks.SaveUserPunches;
 import Methods.PunchTasks.clockInTask;
 import Methods.PunchTasks.clockOut;
@@ -11,13 +10,20 @@ import Methods.SessionIDs.newSessionID;
 import Methods.SessionIDs.retrieveSessionID;
 import userConstructor.user;
 import userConstructor.ansiColors;
-import Methods.*;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Main {
+
+
+public class Main extends Application{
 
     public static final String ANSI_RESET = "\u001B[0m";
 
     public static void main(String[] args) {
+        launch(args);
         boolean clockIn;
         boolean savePunch;
         String sessionId = null;
@@ -110,6 +116,17 @@ public class Main {
         } else {
             System.out.println("Closing. See you next Shift.");
             System.exit(0);
+
         }
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("app.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("TimelyDesign");
+        primaryStage.show();
     }
 }
