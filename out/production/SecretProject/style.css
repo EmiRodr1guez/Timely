@@ -1,10 +1,7 @@
-.root {
-    -fx-background-color: #312c51;
-}
-
 .side_ankerpane {
     -fx-background-color: #48426b;
-    -fx-border-color: #48426b;
+    -fx-border-color: #2207bb;
+    -fx-border-width: 2px 2px 2px 2px;
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
     -fx-border-style: solid;
@@ -34,22 +31,5 @@
     -fx-border-width: 2px 2px 2px 2px;
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
-    -fx-border-style: solid;
-
     -fx-font: bold 12pt "Montserrat SemiBold";
-}
-
-.btn_home:hover {
-    -fx-background-color: #48426b;
-    -fx-effect: dropshadow(gaussian, #F0C38E, 10, 0, 0, 0);
-}
-
-.timelyLabel {
-    -fx-font: bold 36pt "Montserrat SemiBold";
-    -fx-text-fill: #F0C38E;
-}
-
-.sloganLabel {
-    -fx-font: bold 18pt "Montserrat SemiBold";
-    -fx-text-fill: #F1AA9B;
 }
