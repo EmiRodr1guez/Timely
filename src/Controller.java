@@ -1,3 +1,5 @@
+import Methods.PunchTasks.breakEnd;
+import Methods.PunchTasks.breakIn;
 import Methods.PunchTasks.clockInTask;
 import Methods.PunchTasks.clockOut;
 import javafx.scene.control.Button;
@@ -38,6 +40,7 @@ public class Controller {
     public void handleClockOutButtonClicked() {
         clockOut.handleClockOut();
         clockOut.timeAndDateOut();
+
         handlePushTodaysPunch();
 
         System.out.println("Clicked and working");
@@ -47,8 +50,29 @@ public class Controller {
     private Label todayspunch;
     @FXML
     public void handlePushTodaysPunch() {
-        String timeWorked = String.valueOf(clockOut.handleClockOut());
+        String timeWorked = String.valueOf(clockOut.totalTimeWorked());
         todayspunch.setText(timeWorked);
+        System.out.println("I got here!");
+    }
+    @FXML
+    public void handleStartBreakButton() {
+        breakIn.breakInStart();
+        System.out.println("Clicked and working");
+    }
+
+    @FXML
+    public void handleEndBreakButton() {
+        breakIn.breakInStop();
+        System.out.println("Clicked and working");
+        handlebreakLengthLabel();
+    }
+
+    @FXML
+    private Label breaklength;
+    @FXML
+    public void handlebreakLengthLabel() {
+        String todaysBreak = String.valueOf(breakEnd.breakEndExecute());
+        breaklength.setText(todaysBreak);
         System.out.println("I got here!");
     }
     // Clock In Functionality End ------------------------------------------------
@@ -56,6 +80,7 @@ public class Controller {
 
     @FXML
     public void handleHomeButtonClick() {
+
         System.out.println("Clicked and working");
     }
 }

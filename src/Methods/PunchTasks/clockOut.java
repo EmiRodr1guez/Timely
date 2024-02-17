@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 
 public class clockOut {
     public static String handleClockOut() {
+        clockInTask.clockInStop();
 
 
         int seconds = clockInTask.getSeconds();
@@ -32,5 +33,18 @@ public class clockOut {
                  ansiColors.RESET);
         System.out.println("");
         return formattedTime;
+    }
+
+    public static String totalTimeWorked() {
+        int totalSecondsWorked = clockInTask.getSeconds();
+        int totalSecondsBreak = breakIn.getSeconds();
+        int actualSecondsWorked = totalSecondsWorked - totalSecondsBreak;
+
+        int hours = actualSecondsWorked / 3600;
+        int remainingSeconds = actualSecondsWorked % 3600;
+        int minutes = remainingSeconds / 60;
+
+        String totalTimeWorked = String.format("%02d:%02d", hours, minutes);
+        return totalTimeWorked;
     }
 }
