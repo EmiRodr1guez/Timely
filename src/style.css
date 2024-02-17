@@ -80,7 +80,13 @@
     -fx-font: bold 12pt "Montserrat SemiBold";
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
     -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 3px;
     -fx-border-radius: 20px;
+    -fx-transition: all 0.3s ease-in-out; /* Add transition effect */
+}
+
+.pane_11:hover {
+    -fx-border-color: rgba(141, 136, 213, 0.7); /* Change border color on hover */
 }
 
 .pane_111 {

@@ -97,7 +97,7 @@
                   </Button>
                   <ImageView fitHeight="174.0" fitWidth="206.0" layoutX="29.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@Images/taxi-pet-care.png" />
+                        <Image url="@Images/holidays-man-playing-with-a-dog.png" />
                      </image>
                   </ImageView>
                </children>
@@ -167,8 +167,8 @@
                </children></Pane>
             <Button layoutX="45.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleClockInButtonClicked" prefHeight="60.0" prefWidth="149.0" styleClass="clockInButton" stylesheets="@style.css" text="Clock in" textFill="WHITE" />
             <Button layoutX="45.0" layoutY="539.0" mnemonicParsing="false" onAction="#handleClockOutButtonClicked" prefHeight="60.0" prefWidth="149.0" styleClass="clockOutButton" stylesheets="@style.css" text="Clock out" textFill="WHITE" />
-            <Button layoutX="210.0" layoutY="460.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="149.0" styleClass="breakStartButton" stylesheets="@style.css" text="Start break" textFill="WHITE" />
-            <Button layoutX="210.0" layoutY="539.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="149.0" styleClass="breakEndButton" stylesheets="@style.css" text="End break" textFill="WHITE" />
+            <Button layoutX="210.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleStartBreakButton" prefHeight="60.0" prefWidth="149.0" styleClass="breakStartButton" stylesheets="@style.css" text="Start break" textFill="WHITE" />
+            <Button layoutX="210.0" layoutY="539.0" mnemonicParsing="false" onAction="#handleEndBreakButton" prefHeight="60.0" prefWidth="149.0" styleClass="breakEndButton" stylesheets="@style.css" text="End break" textFill="WHITE" />
          </children>
       </Pane>
    </children>
