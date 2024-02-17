@@ -3,45 +3,47 @@
 }
 
 .side_ankerpane {
-    -fx-background-color: #48426b;
-    -fx-border-color: #48426b;
+    -fx-background-color: rgba(72, 66, 107, 0.7); /* Semi-transparent background for glass effect */
+    -fx-border-color: rgba(255, 255, 255, 0.5); /* Light semi-transparent border for glass effect */
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
     -fx-border-style: solid;
-
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 2); /* Optional shadow for depth */
 }
-
 .innerpane {
-    -fx-background-color: #F0C38E;
-    -fx-border-color: #F0C38E;
-    -fx-border-width: 2px 2px 2px 2px;
+    -fx-background-color: rgba(240, 195, 142, 0.3); /* Semi-transparent background for glass effect */
+    -fx-border-color: rgba(240, 195, 142, 0.5); /* Semi-transparent border */
+    -fx-border-width: 2px;
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
     -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 2); /* Optional shadow for depth */
 }
+
 
 .most_inner_pane {
-    -fx-background-color: #eaae67;
-    -fx-border-color: #EAAE67FF;
-    -fx-border-width: 2px 2px 2px 2px;
+    -fx-background-color: rgba(234, 174, 103, 0.3); /* Semi-transparent background for glass effect */
+    -fx-border-color: rgba(234, 174, 103, 0.5); /* Semi-transparent border for glass effect */
+    -fx-border-width: 2px;
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
     -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 2); /* Optional shadow for depth */
 }
 
 .btn_home {
-    -fx-background-color: #312c51;
-    -fx-border-width: 2px 2px 2px 2px;
+    -fx-background-color: rgba(49, 44, 81, 0.7); /* Semi-transparent background */
+    -fx-border-color: rgba(255, 255, 255, 0.5); /* Light border for glass effect */
+    -fx-border-width: 2px;
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
     -fx-border-style: solid;
-
     -fx-font: bold 12pt "Montserrat SemiBold";
 }
 
 .btn_home:hover {
-    -fx-background-color: #48426b;
-    -fx-effect: dropshadow(gaussian, #F0C38E, 10, 0, 0, 0);
+    -fx-background-color: rgba(72, 66, 107, 0.7); /* Darker background on hover */
+    -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
 }
 
 .timelyLabel {
@@ -53,3 +55,93 @@
     -fx-font: bold 18pt "Montserrat SemiBold";
     -fx-text-fill: #F1AA9B;
 }
+
+.pane_1 {
+    -fx-background-color: rgba(240, 195, 142, 0.5); /* Adjust transparency as needed */
+    -fx-background-radius: 20px;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 20px;
+}
+.pane_11 {
+    -fx-background-color: rgba(72, 66, 107, 0.7); /* Adjust transparency as needed */
+    -fx-background-radius: 20px;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 20px;
+}
+
+.pane_111 {
+    -fx-background-color: rgba(72, 66, 107, 0.7); /* Adjust transparency as needed */
+    -fx-background-radius: 20px;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 20px;
+}
+
+.pane_1111 {
+    -fx-background-color: rgba(241, 170, 155, 0.5); /* Adjust transparency as needed */
+    -fx-background-radius: 20px;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 20px;
+}
+
+.clockInButton {
+    -fx-background-color: rgba(143, 168, 128, .5); /* Adjust transparency as needed */
+    -fx-background-radius: 20px;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 20px;
+}
+.clockInButton:hover {
+    -fx-background-color: rgba(148, 169, 134, 0.5); /* Darker background on hover */
+    -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
+}
+
+.clockOutButton {
+    -fx-background-color: rgba(241, 170, 155, 0.5); /* Adjust transparency as needed */
+    -fx-background-radius: 20px;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 20px;
+}
+.clockOutButton:hover {
+    -fx-background-color: rgba(243, 186, 173, 0.5); /* Darker background on hover */
+    -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
+}
+
+.breakStartButton {
+    -fx-background-color: rgba(240, 195, 142, 0.5); /* Adjust transparency as needed */
+    -fx-background-radius: 20px;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 20px;
+}
+.breakStartButton:hover {
+    -fx-background-color: rgba(245, 212, 172, 0.5); /* Darker background on hover */
+    -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
+}
+
+.breakEndButton {
+    -fx-background-color: rgba(240, 195, 142, 0.5); /* Adjust transparency as needed */
+    -fx-background-radius: 20px;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 20px;
+}
+
+.breakEndButton:hover {
+    -fx-background-color: rgba(245, 212, 172, 0.5); /* Darker background on hover */
+    -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
+}
+
+
