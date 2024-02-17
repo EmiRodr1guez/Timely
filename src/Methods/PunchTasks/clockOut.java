@@ -7,6 +7,20 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class clockOut {
+    public static String handleClockOut() {
+
+
+        int seconds = clockInTask.getSeconds();
+        int hours = seconds / 3600;
+        int remainingSeconds = seconds % 3600;
+        int minutes = remainingSeconds / 60;
+
+        //double decimalTimeWorked = hours + (minutes / 60.0) + (remainingSeconds / 60.0); //Commented out.
+
+        String timeWorked = String.format("%02d:%02d", hours, minutes);
+        return timeWorked;
+    }
+
     public static String timeAndDateOut() {
         LocalTime timeOfPunch = LocalTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");

@@ -17,7 +17,7 @@
          <children>
             <AnchorPane fx:id="side_ankerpane" prefHeight="748.0" prefWidth="353.0" styleClass="side_ankerpane" stylesheets="@style.css">
                <children>
-                  <Pane fx:id="inner_pane" layoutX="13.0" layoutY="14.0" prefHeight="62.0" prefWidth="206.0" styleClass="innerpane" stylesheets="@style.css">
+                  <Pane fx:id="inner_pane" layoutX="13.0" layoutY="14.0" prefHeight="62.0" prefWidth="200.0" styleClass="innerpane" stylesheets="@style.css">
                      <children>
                         <ImageView fitHeight="104.0" fitWidth="107.0" layoutX="26.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -121,14 +121,52 @@
                </children>
             </Pane>
             <Label fx:id="timelyLabel" layoutX="45.0" layoutY="84.0" prefHeight="50.0" prefWidth="227.0" styleClass="timelyLabel" stylesheets="@style.css" text="Timely." textFill="WHITE" />
-            <Label fx:id="sloganLabel" layoutX="54.0" layoutY="144.0" styleClass="sloganLabel" stylesheets="@style.css" text="Your wallet. Your Money. Your future." />
-            <Pane fx:id="pane_1" layoutX="45.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" styleClass="pane_1" stylesheets="@style.css" />
-            <Pane fx:id="pane_11" layoutX="209.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" styleClass="pane_11" stylesheets="@style.css" />
-            <Pane fx:id="pane_111" layoutX="378.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" styleClass="pane_111" stylesheets="@style.css" />
-            <Pane fx:id="pane_1111" layoutX="547.0" layoutY="189.0" prefHeight="206.0" prefWidth="272.0" styleClass="pane_1111" stylesheets="@style.css" />
-            <Pane fx:id="pane_11111" layoutX="375.0" layoutY="446.0" prefHeight="165.0" prefWidth="445.0" styleClass="pane_1" stylesheets="@style.css" />
-            <Button layoutX="45.0" layoutY="460.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="149.0" styleClass="clockInButton" stylesheets="@style.css" text="Clock in" textFill="WHITE" />
-            <Button layoutX="45.0" layoutY="539.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="149.0" styleClass="clockOutButton" stylesheets="@style.css" text="Clock out" textFill="WHITE" />
+            <Label fx:id="sloganLabel" layoutX="54.0" layoutY="144.0" styleClass="sloganLabel" stylesheets="@style.css" text="Your time. Your pay, your way." />
+            <Pane fx:id="pane_1" layoutX="45.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" styleClass="pane_1" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="15.0" layoutY="103.0" text="Today's punch" textFill="WHITE" />
+                  <Label fx:id="todayspunch" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="155.0" prefHeight="37.0" prefWidth="92.0" styleClass="todayspunch" stylesheets="@style.css" text="00.00" />
+                  <ImageView fitHeight="117.0" fitWidth="84.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/biro-desk-calendar-with-pencil-and-check-mark-1.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane fx:id="pane_11" layoutX="209.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" styleClass="pane_11" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="21.0" layoutY="103.0" text="Break length" textFill="WHITE" />
+                  <ImageView fitHeight="84.0" fitWidth="174.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/pablo-coffee-break.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="breaklength" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="155.0" prefHeight="37.0" prefWidth="92.0" styleClass="todayspunch" stylesheets="@style.css" text="00.00" />
+               </children></Pane>
+            <Pane fx:id="pane_111" layoutX="378.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" styleClass="pane_111" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="18.0" layoutY="103.0" text="Weekly hours" textFill="WHITE" />
+                  <Label fx:id="breaklength1" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="155.0" prefHeight="37.0" prefWidth="92.0" styleClass="todayspunch" stylesheets="@style.css" text="00.00" />
+                  <ImageView fitHeight="104.0" fitWidth="119.0" layoutX="16.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/bendy-calendar-and-alarm-for-time-management.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane fx:id="pane_1111" layoutX="547.0" layoutY="189.0" prefHeight="206.0" prefWidth="272.0" styleClass="pane_1111" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="60.0" layoutY="103.0" text="Current pay check" textFill="WHITE" />
+                  <ImageView fitHeight="174.0" fitWidth="173.0" layoutX="39.0" layoutY="-72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/social-saving-money-with-piggy-bank-and-cash.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane fx:id="pane_11111" layoutX="375.0" layoutY="446.0" prefHeight="165.0" prefWidth="445.0" styleClass="pane_1" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="116.0" layoutY="14.0" text="Current time on the clock" textFill="WHITE" />
+               </children></Pane>
+            <Button layoutX="45.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleClockInButtonClicked" prefHeight="60.0" prefWidth="149.0" styleClass="clockInButton" stylesheets="@style.css" text="Clock in" textFill="WHITE" />
+            <Button layoutX="45.0" layoutY="539.0" mnemonicParsing="false" onAction="#handleClockOutButtonClicked" prefHeight="60.0" prefWidth="149.0" styleClass="clockOutButton" stylesheets="@style.css" text="Clock out" textFill="WHITE" />
             <Button layoutX="210.0" layoutY="460.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="149.0" styleClass="breakStartButton" stylesheets="@style.css" text="Start break" textFill="WHITE" />
             <Button layoutX="210.0" layoutY="539.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="149.0" styleClass="breakEndButton" stylesheets="@style.css" text="End break" textFill="WHITE" />
          </children>
