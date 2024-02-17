@@ -62,7 +62,17 @@
     -fx-font: bold 12pt "Montserrat SemiBold";
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
     -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 3px; /* Increase border width */
     -fx-border-radius: 20px;
+    -fx-transition: all 0.3s ease-in-out; /* Add transition effect */
+}
+
+.pane_1:hover {
+    -fx-border-color: #F0C38E; /* Change border color on hover */
+}
+.todayspunch {
+    -fx-font: bold 22pt "Montserrat SemiBold";
+    -fx-text-fill: #ffffff;
 }
 .pane_11 {
     -fx-background-color: rgba(72, 66, 107, 0.7); /* Adjust transparency as needed */

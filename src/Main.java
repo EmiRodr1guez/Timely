@@ -102,8 +102,7 @@ public class Main extends Application{
             // Retrieve current time and date
             userTimeAndDate.timeAndDate();
             // Perform clock in task
-            double decimalTimeWorked = clockInTask.clockIn();
-            System.out.println("");
+            String timeWorked = clockOut.handleClockOut();
             // Capture punch out time
             String punchOutTime = clockOut.timeAndDateOut();
             // Ask user if they want to save the punch
@@ -111,7 +110,7 @@ public class Main extends Application{
             savePunch = scnr.nextBoolean();
             if (savePunch) {
                 // Save the punch to the database
-                SaveUserPunches.savePunches(sessionId, punchOutTime, punchOutTime, userDate.sqlDate(), true, decimalTimeWorked);
+                SaveUserPunches.savePunches(sessionId, punchOutTime, punchOutTime, userDate.sqlDate(), true, Double.parseDouble(timeWorked));
             }
         } else {
             System.out.println("Closing. See you next Shift.");
@@ -126,7 +125,7 @@ public class Main extends Application{
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("TimelyDesign");
+        primaryStage.setTitle("Timely - Simplify your paycheck.");
         primaryStage.show();
     }
 }

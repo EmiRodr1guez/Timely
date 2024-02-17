@@ -6,8 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="439ca85b-5ab8-47d0-b40f-de92c70ae7be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask$ClockInTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask$ClockInTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/app.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SecretProject/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/undraw_Dog_c7i6-removebg-preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Methods/PunchTasks/clockInTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods/PunchTasks/clockInTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Methods/PunchTasks/clockOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods/PunchTasks/clockOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
@@ -84,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708027325518</updated>
       <workItem from="1708027326919" duration="13613000" />
-      <workItem from="1708062356567" duration="14439000" />
+      <workItem from="1708062356567" duration="23983000" />
     </task>
     <servers />
   </component>

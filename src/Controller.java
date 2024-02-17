@@ -1,3 +1,5 @@
+import Methods.PunchTasks.clockInTask;
+import Methods.PunchTasks.clockOut;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -11,12 +13,46 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.fxml.FXML;
 
+
 public class Controller {
+
+
+    // Menu Panel ----------------------------------------------------------------
     @FXML
     private Button btn_home;
 
+    // Menu Panel End ------------------------------------------------------------
+
+    //============================================================================
+    //============================================================================
+
+    // Clock In Functionality ----------------------------------------------------
+    private Button clockInButton;
     @FXML
-    private Label timelyLabel; // Inject the timelyLabel from FXML
+    public void handleClockInButtonClicked() {
+        clockInTask.clockIn();
+        System.out.println("Clicked and working");
+    }
+
+    @FXML
+    public void handleClockOutButtonClicked() {
+        clockOut.handleClockOut();
+        clockOut.timeAndDateOut();
+        handlePushTodaysPunch();
+
+        System.out.println("Clicked and working");
+    }
+
+    @FXML
+    private Label todayspunch;
+    @FXML
+    public void handlePushTodaysPunch() {
+        String timeWorked = String.valueOf(clockOut.handleClockOut());
+        todayspunch.setText(timeWorked);
+        System.out.println("I got here!");
+    }
+    // Clock In Functionality End ------------------------------------------------
+
 
     @FXML
     public void handleHomeButtonClick() {
