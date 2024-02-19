@@ -30,6 +30,7 @@ public class Controller {
 
     // Clock In Functionality ----------------------------------------------------
     private Button clockInButton;
+
     @FXML
     public void handleClockInButtonClicked() {
         clockInTask.clockIn();
@@ -48,12 +49,14 @@ public class Controller {
 
     @FXML
     private Label todayspunch;
+
     @FXML
     public void handlePushTodaysPunch() {
         String timeWorked = String.valueOf(clockOut.totalTimeWorked());
         todayspunch.setText(timeWorked);
         System.out.println("I got here!");
     }
+
     @FXML
     public void handleStartBreakButton() {
         breakIn.breakInStart();
@@ -69,6 +72,7 @@ public class Controller {
 
     @FXML
     private Label breaklength;
+
     @FXML
     public void handlebreakLengthLabel() {
         String todaysBreak = String.valueOf(breakEnd.breakEndExecute());
