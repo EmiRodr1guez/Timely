@@ -1,6 +1,46 @@
+.left-pane {
+    -fx-background-color: linear-gradient(to right top, rgba(49, 44, 81, 0.5), rgba(53, 48, 86, 0.5), rgba(57, 52, 91, 0.5), rgba(62, 56, 97, 0.5), rgba(66, 60, 102, 0.5), rgba(89, 68, 111, 0.5), rgba(112, 77, 118, 0.5), rgba(134, 86, 124, 0.5), rgba(174, 105, 128, 0.5), rgba(206, 130, 129, 0.5), rgba(228, 161, 132, 0.5), rgba(240, 195, 142, 0.5));
+    -fx-background-radius: 20px; /* Rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 2); /* Optional shadow for depth */
+    -fx-opacity: 0.9; /* Adjust opacity to make the frosted glass effect */
+
+}
+
+.right-pane {
+    -fx-background-color: rgba(234, 174, 103, 0.3); /* Semi-transparent background color */
+    -fx-background-radius: 20px; /* Rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+}
+
+.text-box {
+    -fx-padding: 5px 10px; /* Padding */
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-background-insets: 0, 0; /* No background insets */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-border-style: solid; /* Border style */
+    -fx-border-color: linear-gradient(to right, #312c51, #353056, #39345b, #3e3861, #423c66, #59446f, #704d76, #86567c, #ae6980, #ce8281, #e4a184, #f0c38e); /* Gradient for border color */
+}
+
+.text-box:hover {
+    -fx-border-color: linear-gradient(to right, #312c51, #353056, #39345b, #3e3861, #423c66, #59446f, #704d76, #86567c, #ae6980, #ce8281, #e4a184, #f0c38e); /* Gradient for border color on hover */
+}
+
+.loginRoot {
+    -fx-background-color: transparent;
+}
+
+.transparentPane {
+    -fx-background-color: transparent;
+}
+
 .root {
     -fx-background-color: #312c51;
 }
+
 
 .side_ankerpane {
     -fx-background-color: rgba(72, 66, 107, 0.7); /* Semi-transparent background for glass effect */
@@ -95,7 +135,13 @@
     -fx-font: bold 12pt "Montserrat SemiBold";
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
     -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 3px;
     -fx-border-radius: 20px;
+    -fx-transition: all 0.3s ease-in-out; /* Add transition effect */
+}
+
+.pane_111:hover {
+    -fx-border-color: rgba(141, 136, 213, 0.7); /* Change border color on hover */
 }
 
 .pane_1111 {

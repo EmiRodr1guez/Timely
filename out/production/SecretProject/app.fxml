@@ -164,6 +164,7 @@
             <Pane fx:id="pane_11111" layoutX="375.0" layoutY="446.0" prefHeight="165.0" prefWidth="445.0" styleClass="pane_1" stylesheets="@style.css">
                <children>
                   <Label layoutX="116.0" layoutY="14.0" text="Current time on the clock" textFill="WHITE" />
+                  <Label fx:id="liveCount" alignment="CENTER" contentDisplay="CENTER" layoutX="177.0" layoutY="64.0" prefHeight="37.0" prefWidth="92.0" styleClass="todayspunch" stylesheets="@style.css" text="00.00" />
                </children></Pane>
             <Button layoutX="45.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleClockInButtonClicked" prefHeight="60.0" prefWidth="149.0" styleClass="clockInButton" stylesheets="@style.css" text="Clock in" textFill="WHITE" />
             <Button layoutX="45.0" layoutY="539.0" mnemonicParsing="false" onAction="#handleClockOutButtonClicked" prefHeight="60.0" prefWidth="149.0" styleClass="clockOutButton" stylesheets="@style.css" text="Clock out" textFill="WHITE" />

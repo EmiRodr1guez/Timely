@@ -1,15 +1,4 @@
-import java.sql.*;
-import java.util.Scanner;
-import Methods.PunchTasks.SaveUserPunches;
-import Methods.PunchTasks.clockInTask;
-import Methods.PunchTasks.clockOut;
-import Methods.PunchTasks.microTasks.*;
-import Methods.PunchTasks.userTimeAndDate;
-import Methods.SessionIDs.createSessionId;
-import Methods.SessionIDs.newSessionID;
-import Methods.SessionIDs.retrieveSessionID;
-import userConstructor.user;
-import userConstructor.ansiColors;
+import javafx.stage.StageStyle;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -24,21 +13,10 @@ public class Main extends Application{
 
     public static void main(String[] args) {
         launch(args);
-        boolean clockIn;
+      /*  boolean clockIn;
         boolean savePunch;
         String sessionId = null;
         Scanner scnr = new Scanner(System.in);
-
-        System.out.println(ansiColors.BLACK_BACKGROUND + ansiColors.CYAN +
-                "████████╗██╗███╗   ███╗███████╗██╗  ██╗   ██╗\n" +
-                "╚══██╔══╝██║████╗ ████║██╔════╝██║  ╚██╗ ██╔╝\n" +
-                "   ██║   ██║██╔████╔██║█████╗  ██║   ╚████╔╝ \n" +
-                "   ██║   ██║██║╚██╔╝██║██╔══╝  ██║    ╚██╔╝  \n" +
-                "   ██║   ██║██║ ╚═╝ ██║███████╗███████╗██║   \n" +
-                "   ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝╚═╝   ");
-
-        System.out.println("Welcome to SavePunch. The best way to keep track of your time." + ansiColors.RESET);
-
         Connection connection = null; // Initialize the connection variable outside the try-catch block
 
         try {
@@ -117,15 +95,17 @@ public class Main extends Application{
             System.exit(0);
 
         }
+        */
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("app.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("loginPage.fxml"));
+
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Timely - Simplify your paycheck.");
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.show();
     }
 }
