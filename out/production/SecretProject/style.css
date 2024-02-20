@@ -29,12 +29,19 @@
     -fx-border-color: linear-gradient(to right, #312c51, #353056, #39345b, #3e3861, #423c66, #59446f, #704d76, #86567c, #ae6980, #ce8281, #e4a184, #f0c38e); /* Gradient for border color on hover */
 }
 
-.loginRoot {
-    -fx-background-color: transparent;
+.btn_register {
+    -fx-background-color: rgba(49, 44, 81, 0.7); /* Semi-transparent background */
+    -fx-border-color: linear-gradient(to right, #312c51, #353056, #39345b, #3e3861, #423c66, #59446f, #704d76, #86567c, #ae6980, #ce8281, #e4a184, #f0c38e); /* Gradient for border color on hover */
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-font: bold 12pt "Montserrat SemiBold";
 }
 
-.transparentPane {
-    -fx-background-color: transparent;
+.btn_register:hover {
+    -fx-background-color: rgba(72, 66, 107, 0.7); /* Darker background on hover */
+    -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
 }
 
 .root {

@@ -6,11 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="439ca85b-5ab8-47d0-b40f-de92c70ae7be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Methods/PunchTasks/clockInTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods/PunchTasks/clockInTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Methods/PunchTasks/clockOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods/PunchTasks/clockOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Login/LOGIN_CONTROLLER.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Login/LOGIN_CONTROLLER.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/loginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/loginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/LOGIN_CONTROLLER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/LOGIN_CONTROLLER.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/REGISTER_CONTROLLER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/REGISTER_CONTROLLER.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registerPage.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -46,19 +51,26 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/idfke/Desktop/MFXDemo_Win&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/idfke/IdeaProjects/SecretProject&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\idfke\IdeaProjects\SecretProject\src\Login" />
+      <recent name="C:\Users\idfke\IdeaProjects\SecretProject\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="liberica-21" />
@@ -87,12 +99,25 @@
       <workItem from="1708027326919" duration="13613000" />
       <workItem from="1708062356567" duration="24178000" />
       <workItem from="1708159283234" duration="39000" />
-      <workItem from="1708191387411" duration="7683000" />
+      <workItem from="1708191387411" duration="10261000" />
+      <workItem from="1708320509483" duration="207000" />
+      <workItem from="1708326887421" duration="25229000" />
+      <workItem from="1708392119814" duration="2948000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
