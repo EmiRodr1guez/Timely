@@ -2,6 +2,8 @@ import Methods.PunchTasks.breakEnd;
 import Methods.PunchTasks.breakIn;
 import Methods.PunchTasks.clockInTask;
 import Methods.PunchTasks.clockOut;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -22,6 +24,9 @@ public class Controller {
     // Menu Panel ----------------------------------------------------------------
     @FXML
     private Button btn_home;
+
+    @FXML
+    private Button cancelButton;
 
     // Menu Panel End ------------------------------------------------------------
 
@@ -81,6 +86,11 @@ public class Controller {
     }
     // Clock In Functionality End ------------------------------------------------
 
+    public void cancelButtonOnAction(ActionEvent e) {
+        Stage stage = (Stage) cancelButton.getScene().getWindow();
+        stage.close();
+        Platform.exit();
+    }
 
     @FXML
     public void handleHomeButtonClick() {
