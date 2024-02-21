@@ -104,14 +104,16 @@
 }
 
 .pane_1 {
-    -fx-background-color: rgba(240, 195, 142, 0.5); /* Adjust transparency as needed */
+    -fx-background-color: linear-gradient(to right top, rgba(240, 195, 142, 0.5), rgba(228, 161, 132, 0.5), rgba(206, 130, 129, 0.5), rgba(174, 105, 128, 0.5), rgba(134, 86, 124, 0.5), rgba(112, 77, 118, 0.5), rgba(89, 68, 111, 0.5), rgba(66, 60, 102, 0.5), rgba(62, 56, 97, 0.5), rgba(57, 52, 91, 0.5), rgba(53, 48, 86, 0.5), rgba(49, 44, 81, 0.5));
+ /* Adjust transparency as needed */
     -fx-background-radius: 20px;
     -fx-font: bold 12pt "Montserrat SemiBold";
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 10, 0, 0, 2);
     -fx-border-color: rgba(255, 255, 255, 0.3);
     -fx-border-width: 3px; /* Increase border width */
     -fx-border-radius: 20px;
     -fx-transition: all 0.3s ease-in-out; /* Add transition effect */
+
 }
 
 .pane_1:hover {
@@ -122,14 +124,16 @@
     -fx-text-fill: #ffffff;
 }
 .pane_11 {
-    -fx-background-color: rgba(72, 66, 107, 0.7); /* Adjust transparency as needed */
+    -fx-background-color: linear-gradient(to right top, rgba(49, 44, 81, 0.5), rgba(53, 48, 86, 0.5), rgba(57, 52, 91, 0.5), rgba(62, 56, 97, 0.5), rgba(66, 60, 102, 0.5), rgba(89, 68, 111, 0.5), rgba(112, 77, 118, 0.5), rgba(134, 86, 124, 0.5), rgba(174, 105, 128, 0.5), rgba(206, 130, 129, 0.5), rgba(228, 161, 132, 0.5), rgba(240, 195, 142, 0.5));
     -fx-background-radius: 20px;
     -fx-font: bold 12pt "Montserrat SemiBold";
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 10, 0, 0, 2); /* Optional shadow for depth */
     -fx-border-color: rgba(255, 255, 255, 0.3);
     -fx-border-width: 3px;
     -fx-border-radius: 20px;
     -fx-transition: all 0.3s ease-in-out; /* Add transition effect */
+    -fx-opacity: 0.7; /* Adjust opacity to make the frosted glass effect */
+
 }
 
 .pane_11:hover {
@@ -137,14 +141,15 @@
 }
 
 .pane_111 {
-    -fx-background-color: rgba(72, 66, 107, 0.7); /* Adjust transparency as needed */
+    -fx-background-color: linear-gradient(to right bottom, rgba(49, 44, 81, 0.5), rgba(53, 48, 86, 0.5), rgba(57, 52, 91, 0.5), rgba(62, 56, 97, 0.5), rgba(66, 60, 102, 0.5), rgba(89, 68, 111, 0.5), rgba(112, 77, 118, 0.5), rgba(134, 86, 124, 0.5), rgba(174, 105, 128, 0.5), rgba(206, 130, 129, 0.5), rgba(228, 161, 132, 0.5), rgba(240, 195, 142, 0.5));
     -fx-background-radius: 20px;
     -fx-font: bold 12pt "Montserrat SemiBold";
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.51), 10, 0, 0, 2); /* Optional shadow for depth */
     -fx-border-color: rgba(255, 255, 255, 0.3);
     -fx-border-width: 3px;
     -fx-border-radius: 20px;
     -fx-transition: all 0.3s ease-in-out; /* Add transition effect */
+    -fx-opacity: 0.7; /* Adjust opacity to make the frosted glass effect */
 }
 
 .pane_111:hover {
@@ -152,12 +157,16 @@
 }
 
 .pane_1111 {
-    -fx-background-color: rgba(241, 170, 155, 0.5); /* Adjust transparency as needed */
+    -fx-background-color: linear-gradient(to left bottom, rgba(49, 44, 81, 0.5), rgba(53, 48, 86, 0.5), rgba(57, 52, 91, 0.5), rgba(62, 56, 97, 0.5), rgba(66, 60, 102, 0.5), rgba(89, 68, 111, 0.5), rgba(112, 77, 118, 0.5), rgba(134, 86, 124, 0.5), rgba(174, 105, 128, 0.5), rgba(206, 130, 129, 0.5), rgba(228, 161, 132, 0.5), rgba(240, 195, 142, 0.5));
     -fx-background-radius: 20px;
     -fx-font: bold 12pt "Montserrat SemiBold";
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
-    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 10, 0, 0, 2);
     -fx-border-radius: 20px;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 3px;
+}
+.pane_1111:hover {
+    -fx-border-color: rgba(213, 136, 136, 0.7); /* Change border color on hover */
 }
 
 .clockInButton {
@@ -167,6 +176,7 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
     -fx-border-color: rgba(255, 255, 255, 0.3);
     -fx-border-radius: 20px;
+    -fx-background-blur: 10px;
 }
 .clockInButton:hover {
     -fx-background-color: rgba(148, 169, 134, 0.5); /* Darker background on hover */
