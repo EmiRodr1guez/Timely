@@ -1,3 +1,5 @@
+/*Login/Register UI*/
+
 .left-pane {
     -fx-background-color: linear-gradient(to right top, rgba(49, 44, 81, 0.5), rgba(53, 48, 86, 0.5), rgba(57, 52, 91, 0.5), rgba(62, 56, 97, 0.5), rgba(66, 60, 102, 0.5), rgba(89, 68, 111, 0.5), rgba(112, 77, 118, 0.5), rgba(134, 86, 124, 0.5), rgba(174, 105, 128, 0.5), rgba(206, 130, 129, 0.5), rgba(228, 161, 132, 0.5), rgba(240, 195, 142, 0.5));
     -fx-background-radius: 20px; /* Rounded corners */
@@ -43,6 +45,8 @@
     -fx-background-color: rgba(72, 66, 107, 0.7); /* Darker background on hover */
     -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
 }
+
+/* End of Login/Register UI*/
 
 .root {
     -fx-background-color: #312c51;
@@ -182,7 +186,6 @@
     -fx-background-color: rgba(148, 169, 134, 0.5); /* Darker background on hover */
     -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
 }
-
 .clockOutButton {
     -fx-background-color: rgba(241, 170, 155, 0.5); /* Adjust transparency as needed */
     -fx-background-radius: 20px;
