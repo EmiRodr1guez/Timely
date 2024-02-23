@@ -1,10 +1,14 @@
 package Methods.PunchTasks;
-import java.sql.*;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 
 public class SaveUserPunches {
     // Method to save punches to the database
-    public static void savePunchesToDB(String iduser, String sqlTimeIn, String sqlTimeOut, String sqlDate, double decimalTimeWorked){
+    public static void savePunchesToDB(String iduser, String sqlTimeIn, String sqlTimeOut, String sqlDate, double decimalTimeWorked) {
         try {
             // Establish connection to the database
             Connection connection = DriverManager.getConnection(
@@ -31,7 +35,7 @@ public class SaveUserPunches {
             // Close the resources
             preparedStatement.close();
             connection.close();
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }

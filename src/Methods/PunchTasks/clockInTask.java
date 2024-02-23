@@ -17,14 +17,14 @@ public class clockInTask {
         timer.cancel();
     }
 
+    public static int getSeconds() {
+        return seconds;
+    }
+
     static class ClockInTask extends TimerTask {
         @Override
         public void run() {
             seconds++;
         }
-    }
-
-    public static int getSeconds() {
-        return seconds;
     }
 }

@@ -9,14 +9,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
-import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
-import java.sql.Connection;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
 import java.io.IOException;
-import java.sql.ResultSet;
+import java.sql.Connection;
 import java.sql.Statement;
-import java.util.Objects;
 
 
 public class REGISTER_CONTROLLER {
@@ -59,7 +58,7 @@ public class REGISTER_CONTROLLER {
         String insertValues = username + "','" + password + "')";
         String insertToRegister = insertFields + insertValues;
 
-        try{
+        try {
             Statement statement = connectDB.createStatement();
             statement.executeUpdate(insertToRegister);
             registrationMethodLabel.setText("Successfully Registered! 🎉");
@@ -77,8 +76,5 @@ public class REGISTER_CONTROLLER {
     }
 
 
-
-
-
-    }
+}
 
