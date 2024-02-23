@@ -17,14 +17,14 @@ public class breakIn {
         timer_break.cancel();
     }
 
+    public static int getSeconds() {
+        return seconds_break;
+    }
+
     static class breakInStart extends TimerTask {
         @Override
         public void run() {
             seconds_break++;
         }
-    }
-
-    public static int getSeconds() {
-        return seconds_break;
     }
 }

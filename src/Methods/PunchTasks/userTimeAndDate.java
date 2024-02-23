@@ -2,10 +2,10 @@ package Methods.PunchTasks;
 
 import userConstructor.ansiColors;
 
-import java.time.LocalTime;
-import java.util.*;
 import java.text.SimpleDateFormat;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 
 // Gets userConstructor.user current Formatted date and Time.
@@ -17,8 +17,7 @@ public class userTimeAndDate {
         String formattedTime = timeOfPunch.format(formatter);
         SimpleDateFormat ft = new SimpleDateFormat("MM-dd-yyyy");
 
-        System.out.println(ansiColors.BLUE + ansiColors.BLACK_BACKGROUND + "Today is : " + ft.format(new Date()) +
-                " and time is : " + formattedTime + ansiColors.RESET);
+        System.out.println(ansiColors.BLUE + ansiColors.BLACK_BACKGROUND + "Today is : " + ft.format(new Date()) + " and time is : " + formattedTime + ansiColors.RESET);
 
 
     }

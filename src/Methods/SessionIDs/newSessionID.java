@@ -1,7 +1,8 @@
 package Methods.SessionIDs;
-import Methods.SessionIDs.createSessionId;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class newSessionID {
 

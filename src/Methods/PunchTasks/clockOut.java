@@ -30,7 +30,7 @@ public class clockOut {
         SimpleDateFormat ft = new SimpleDateFormat("MM-dd-yyyy");
 
         System.out.println(ansiColors.RED + ansiColors.BLACK_BACKGROUND + "You have clocked out at: " + formattedTime +
-                 ansiColors.RESET);
+                ansiColors.RESET);
         System.out.println("");
         return formattedTime;
     }
