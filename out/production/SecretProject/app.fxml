@@ -137,7 +137,7 @@
                      </image>
                   </ImageView>
                </children></Pane>
-            <Pane fx:id="pane_11" layoutX="209.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" styleClass="pane_11" stylesheets="@style.css">
+            <Pane fx:id="pane_11" layoutX="209.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" style="-fx-background-color: linear-gradient(to right top, #312c51, #353056, #39345b, #3e3861, #423c66, #59446f, #704d76, #86567c, #ae6980, #ce8281, #e4a184, #f0c38e);" styleClass="pane_11" stylesheets="@style.css">
                <children>
                   <Label layoutX="21.0" layoutY="103.0" text="Break length" textFill="WHITE" />
                   <ImageView fitHeight="84.0" fitWidth="174.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
