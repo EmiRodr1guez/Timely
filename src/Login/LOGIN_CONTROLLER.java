@@ -15,8 +15,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Objects;
+
+import org.mindrot.jbcrypt.BCrypt;
+
 
 
 public class LOGIN_CONTROLLER {
@@ -52,45 +56,62 @@ public class LOGIN_CONTROLLER {
 
 
     public void loginButtonAction(ActionEvent e) throws IOException {
-        if (!usernameTextField.getText().isBlank() && !passwordPasswordField.getText().isBlank()) {
+        if (usernameTextField.getText().length() != 0 && passwordPasswordField.getText().length() != 0) {
             loginMessageLabel.setText("Logging in... ⏳");
-            validateLogin();
-            Parent root = FXMLLoader.load(getClass().getResource("../app.fxml"));
-
-            // Create a new scene with root and set the stage
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-
+            boolean validated = validateLogin();
+            System.out.println("Validate? " + validated);
+            if (validated) {
+                Parent root = FXMLLoader.load(getClass().getResource("../app.fxml"));
+                Scene scene = new Scene(root);
+                Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            }
         } else {
             loginMessageLabel.setText("Rats! One or more of the fields are missing. 😔");
         }
-
     }
+    
 
-    public void validateLogin() {
+    public boolean validateLogin() {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
-
-        String verifyLogin = "SELECT count(1) FROM useraccounts WHERE username = '" + usernameTextField.getText() + "' AND password = '" + passwordPasswordField.getText() + "'";
-
+        boolean loginSuccessful = false; 
+    
+        String username = usernameTextField.getText();
+        String enteredPassword = passwordPasswordField.getText();
+    
+        String getPasswordQuery = "SELECT password FROM useraccounts WHERE username = '" + username + "'";
         try {
             Statement statement = connectDB.createStatement();
-            ResultSet queryResult = statement.executeQuery(verifyLogin);
-
-            while (queryResult.next()) {
-                if (queryResult.getInt(1) == 1) {
+            ResultSet queryResult = statement.executeQuery(getPasswordQuery);
+    
+            if (queryResult.next()) {
+                String hashedPasswordFromDB = queryResult.getString("password");
+                if (BCrypt.checkpw(enteredPassword, hashedPasswordFromDB)) {
                     loginMessageLabel.setText("Login successful! 😊");
+                    loginSuccessful = true; 
                 } else {
                     loginMessageLabel.setText("Invalid login. Please try again. 😔");
+                    System.out.println("UNVERIFIED BUT USER FOUND");
                 }
+            } else {
+                loginMessageLabel.setText("Invalid login. Please try again. 😔");
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            e.getCause();
+        } finally {
+            try {
+                if (connectDB != null) {
+                    connectDB.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
+        return loginSuccessful; 
     }
+    
 
 
 }
