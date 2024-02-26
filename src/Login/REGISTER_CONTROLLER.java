@@ -16,8 +16,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.Statement;
-
-
 import org.mindrot.jbcrypt.BCrypt;
 
 
@@ -58,7 +56,6 @@ public class REGISTER_CONTROLLER {
         String username = usernameTextField.getText();
         String password = passwordPasswordField.getText();
 
- encryption
         String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
 
         String insertFields = "INSERT INTO useraccounts (username, password) VALUES ('";
