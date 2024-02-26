@@ -15,12 +15,14 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
+
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Objects;
 
 import org.mindrot.jbcrypt.BCrypt;
-
+import java.sql.Statement;
+import java.util.Objects;
 
 
 public class LOGIN_CONTROLLER {
@@ -112,6 +114,7 @@ public class LOGIN_CONTROLLER {
         return loginSuccessful; 
     }
     
+
 
 
 }
