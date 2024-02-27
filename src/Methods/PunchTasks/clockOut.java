@@ -1,6 +1,5 @@
 package Methods.PunchTasks;
 
-import userConstructor.ansiColors;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
@@ -28,10 +27,6 @@ public class clockOut {
 
         String formattedTime = timeOfPunch.format(formatter);
         SimpleDateFormat ft = new SimpleDateFormat("MM-dd-yyyy");
-
-        System.out.println(ansiColors.RED + ansiColors.BLACK_BACKGROUND + "You have clocked out at: " + formattedTime +
-                ansiColors.RESET);
-        System.out.println("");
         return formattedTime;
     }
 

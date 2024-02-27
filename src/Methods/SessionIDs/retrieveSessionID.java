@@ -23,7 +23,7 @@ public class retrieveSessionID {
                 sessionId = resultSet.getString("iduser");
             }
 
-            // Close resources
+            // Close Login.resources
             resultSet.close();
             preparedStatement.close();
         } catch (SQLException e) {
