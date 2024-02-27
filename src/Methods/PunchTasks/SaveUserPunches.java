@@ -32,7 +32,7 @@ public class SaveUserPunches {
             // Print the number of rows affected (optional)
             System.out.println("Rows affected: " + rowsAffected);
 
-            // Close the resources
+            // Close the Login.resources
             preparedStatement.close();
             connection.close();
         } catch (SQLException e) {
