@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="439ca85b-5ab8-47d0-b40f-de92c70ae7be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Login/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Login/DatabaseConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockOut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/userTimeAndDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/userTimeAndDate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/loginPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/userConstructor/ansiColors.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/userConstructor/user.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Methods/PunchTasks/SaveUserPunches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods/PunchTasks/SaveUserPunches.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Methods/PunchTasks/clockOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods/PunchTasks/clockOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Methods/PunchTasks/userTimeAndDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods/PunchTasks/userTimeAndDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Methods/SessionIDs/retrieveSessionID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods/SessionIDs/retrieveSessionID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/loginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userConstructor/ansiColors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userConstructor/user.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask$ClockInTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask$ClockInTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +21,17 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="5a27bb45-ff6e-49ed-95a3-cf076bc3782d" value="Violet" />
+      <entry key="7983c815-38c8-4f4f-9624-611eefc160b9" value="Green" />
+    </colors>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -70,6 +66,11 @@
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "ssh.settings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -114,7 +115,11 @@
       <workItem from="1708669919801" duration="1373000" />
       <workItem from="1708709994404" duration="2234000" />
       <workItem from="1708831805514" duration="8546000" />
-      <workItem from="1708980700983" duration="14636000" />
+      <workItem from="1708980700983" duration="16763000" />
+      <workItem from="1709156329286" duration="1309000" />
+      <workItem from="1709237485038" duration="1081000" />
+      <workItem from="1709311122322" duration="1239000" />
+      <workItem from="1709576401927" duration="7094000" />
     </task>
     <servers />
   </component>
