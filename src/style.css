@@ -83,7 +83,7 @@
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 2); /* Optional shadow for depth */
 }
 
-.btn_home {
+.btn_active {
     -fx-background-color: rgba(49, 44, 81, 0.7); /* Semi-transparent background */
     -fx-border-color: rgba(255, 255, 255, 0.5); /* Light border for glass effect */
     -fx-border-width: 2px;
@@ -93,8 +93,23 @@
     -fx-font: bold 12pt "Montserrat SemiBold";
 }
 
-.btn_home:hover {
+.btn_active:hover {
     -fx-background-color: rgba(72, 66, 107, 0.7); /* Darker background on hover */
+    -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
+}
+
+.btn_nonactive {
+    -fx-background-color: rgba(234, 174, 103, 0.3); /* Semi-transparent background for glass effect */
+    -fx-border-color: rgba(234, 174, 103, 0.5); /* Semi-transparent border for glass effect */
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-font: bold 12pt "Montserrat SemiBold";
+}
+
+.btn_nonactive:hover {
+    -fx-background-color: rgba(234, 174, 103, 0.3); /* Semi-transparent background for glass effect */
     -fx-effect: dropshadow(gaussian, rgba(240, 195, 142, 0.5), 10, 0, 0, 0); /* Shadow with a hint of the accent color */
 }
 
@@ -113,12 +128,10 @@
     /* Adjust transparency as needed */
     -fx-background-radius: 20px;
     -fx-font: bold 12pt "Montserrat SemiBold";
-    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 10, 0, 0, 2);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 10, 0, 0, 2);    -fx-border-color: rgba(255, 255, 255, 0.3);
     -fx-border-color: rgba(255, 255, 255, 0.3);
     -fx-border-width: 3px; /* Increase border width */
     -fx-border-radius: 20px;
-    -fx-transition: all 0.3s ease-in-out; /* Add transition effect */
-
 }
 
 .pane_1:hover {

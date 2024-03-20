@@ -22,7 +22,8 @@ public class Shift {
         this.shiftDuration = null;
     }
 
-    //This method handles checking if we are clocked in already and updates the shift if so but need emi's help with setting a function to run as soon as we run page to update shift
+    //This method handles checking if we are clocked in already and updates the shift if so
+    // but need emi's help with setting a function to run as soon as we run page to update shift
     public void clockIn() 
     {
         if (clockedIn)

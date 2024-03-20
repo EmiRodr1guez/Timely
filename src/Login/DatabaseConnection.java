@@ -11,7 +11,7 @@ public class DatabaseConnection {
     public Connection getConnection() {
         String databaseUser = DatabaseConfig.getDatabaseUser();
         String databasePassword = DatabaseConfig.getDatabasePassword();
-        String url = "jdbc:mysql://18.223.158.247:3306/Timely";
+        String url = "jdbc:mysql://3.141.47.195:3306/Timely";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             databaseLink = DriverManager.getConnection(url, databaseUser, databasePassword);

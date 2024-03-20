@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Timely" uuid="7983c815-38c8-4f4f-9624-611eefc160b9">
+    <data-source source="LOCAL" name="Timely@3.141.47.195" uuid="7983c815-38c8-4f4f-9624-611eefc160b9">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://18.223.158.247:3306/Timely</jdbc-url>
+      <jdbc-url>jdbc:mysql://3.141.47.195:3306/Timely</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
