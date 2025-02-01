@@ -5,10 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="439ca85b-5ab8-47d0-b40f-de92c70ae7be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7983c815-38c8-4f4f-9624-611eefc160b9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7983c815-38c8-4f4f-9624-611eefc160b9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecretProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SecretProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Login/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Login/DatabaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Login/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Login/DatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Login/LOGIN_CONTROLLER.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Login/LOGIN_CONTROLLER.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Login/REGISTER_CONTROLLER.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Login/REGISTER_CONTROLLER.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Login/loginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Login/loginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Login/registerPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Login/registerPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/DataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/DataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/SaveUserPunches.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/SaveUserPunches.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/breakEnd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/breakEnd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/breakIn$breakInStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/breakIn$breakInStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/breakIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/breakIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask$ClockInTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask$ClockInTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockInTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/clockOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/microTasks/userDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/microTasks/userDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/microTasks/userTimeIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/microTasks/userTimeIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/microTasks/userTimeOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/microTasks/userTimeOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/userTimeAndDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/PunchTasks/userTimeAndDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/SYSNotifs/systemtray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/SessionIDs/createSessionId.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/SessionIDs/createSessionId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/SessionIDs/newSessionID.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/SessionIDs/newSessionID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/SessionIDs/retrieveSessionID.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/SessionIDs/retrieveSessionID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/Methods/Shift.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/Methods/Shift.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SecretProject/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/app.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretProject/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretProject/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/loginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/loginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/registerPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/registerPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,44 +66,65 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EmiRodr1guez&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EmiRodr1guez/Timely.git&quot;,
+    &quot;accountId&quot;: &quot;02174091-57ee-4c46-be5d-dcdceef38f44&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2cPy5UaVb0bWCUlujD2cTP306i2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/idfke/IdeaProjects/SecretProject/lib/jBCrypt-0.4.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/idfke/IdeaProjects/SecretProject/lib/jBCrypt-0.4.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "ssh.settings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\idfke\IdeaProjects\SecretProject\src\Login" />
@@ -82,7 +138,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SecretProject" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;\Users\idfke\javafx-sdk-21.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml " />
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Documents/javafx-sdk-23.0.2/lib --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,6 +148,14 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -121,6 +185,8 @@
       <workItem from="1710183968629" duration="2400000" />
       <workItem from="1710797889182" duration="3904000" />
       <workItem from="1710803095628" duration="5011000" />
+      <workItem from="1738170172458" duration="2092000" />
+      <workItem from="1738387233279" duration="7908000" />
     </task>
     <servers />
   </component>

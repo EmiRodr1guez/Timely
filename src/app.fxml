@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller" onMousePressed="#handleMousePressed" onMouseDragged="#handleMouseDragged">
    <children>
       <VBox prefHeight="682.0" prefWidth="229.0">
          <children>
@@ -19,7 +19,7 @@
                <children>
                   <Pane fx:id="inner_pane" layoutX="13.0" layoutY="14.0" prefHeight="62.0" prefWidth="200.0" styleClass="innerpane" stylesheets="@style.css">
                      <children>
-                        <ImageView fitHeight="104.0" fitWidth="107.0" layoutX="26.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="104.0" fitWidth="107.0" layoutX="48.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/TypedLogo.png" />
                            </image>
@@ -83,11 +83,6 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <ImageView fitHeight="189.0" fitWidth="200.0" layoutX="24.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../Downloads/chromed-money-savings-in-piggy-bank-and-online-savings-account-1.png" />
-                     </image>
-                  </ImageView>
                </children>
             </AnchorPane>
          </children>
@@ -118,7 +113,7 @@
             <Label fx:id="sloganLabel" layoutX="54.0" layoutY="144.0" styleClass="sloganLabel" stylesheets="@style.css" text="Your time. Your pay, your way." />
             <Pane fx:id="pane_1" layoutX="45.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" styleClass="pane_1" stylesheets="@style.css">
                <children>
-                  <Label layoutX="15.0" layoutY="103.0" text="Today's punch" textFill="WHITE" />
+                  <Label layoutX="25.0" layoutY="103.0" text="Today's punch" textFill="WHITE" />
                   <Label fx:id="todayspunch" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="155.0" prefHeight="37.0" prefWidth="92.0" styleClass="todayspunch" stylesheets="@style.css" text="00.00" />
                   <ImageView fitHeight="84.0" fitWidth="104.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -128,7 +123,7 @@
                </children></Pane>
             <Pane fx:id="pane_11" layoutX="209.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" style="-fx-background-color: linear-gradient(to right top, #312c51, #353056, #39345b, #3e3861, #423c66, #59446f, #704d76, #86567c, #ae6980, #ce8281, #e4a184, #f0c38e);" styleClass="pane_11" stylesheets="@style.css">
                <children>
-                  <Label layoutX="21.0" layoutY="103.0" text="Break length" textFill="WHITE" />
+                  <Label layoutX="33.0" layoutY="103.0" text="Break length" textFill="WHITE" />
                   <ImageView fitHeight="84.0" fitWidth="174.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@Images/morphis-lava-lamp-and-retro-computer-surrounded-by-geometric-figures.png" />
@@ -138,7 +133,7 @@
                </children></Pane>
             <Pane fx:id="pane_111" layoutX="378.0" layoutY="189.0" prefHeight="206.0" prefWidth="149.0" styleClass="pane_111" stylesheets="@style.css">
                <children>
-                  <Label layoutX="18.0" layoutY="103.0" text="Weekly hours" textFill="WHITE" />
+                  <Label layoutX="29.0" layoutY="106.0" text="Weekly hours" textFill="WHITE" />
                   <Label fx:id="breaklength1" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="155.0" prefHeight="37.0" prefWidth="92.0" styleClass="todayspunch" stylesheets="@style.css" text="00.00" />
                   <ImageView fitHeight="116.0" fitWidth="149.0" layoutX="17.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -157,7 +152,7 @@
                </children></Pane>
             <Pane fx:id="pane_11111" layoutX="375.0" layoutY="446.0" prefHeight="165.0" prefWidth="454.0" styleClass="pane_1" stylesheets="@style.css">
                <children>
-                  <Label layoutX="116.0" layoutY="14.0" text="Current time on the clock" textFill="WHITE" />
+                  <Label layoutX="143.0" layoutY="14.0" text="Current time on the clock" textFill="WHITE" />
                   <Label fx:id="liveCount" alignment="CENTER" contentDisplay="CENTER" layoutX="177.0" layoutY="64.0" prefHeight="37.0" prefWidth="92.0" styleClass="todayspunch" stylesheets="@style.css" text="00.00" />
                </children></Pane>
             <Button layoutX="45.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleClockInButtonClicked" prefHeight="60.0" prefWidth="149.0" styleClass="clockInButton" stylesheets="@style.css" text="Clock in" textFill="WHITE" />

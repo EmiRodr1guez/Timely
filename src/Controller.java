@@ -8,10 +8,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.fxml.FXML;
-
+import javafx.scene.input.MouseEvent;
+import javafx.scene.Node;
 
 public class Controller {
 
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     // Menu Panel ----------------------------------------------------------------
     @FXML
@@ -86,7 +89,19 @@ public class Controller {
 
     @FXML
     public void handleHomeButtonClick() {
-
         System.out.println("Clicked and working");
+    }
+
+    @FXML
+    public void handleMousePressed(MouseEvent event) {
+        xOffset = event.getSceneX();
+        yOffset = event.getSceneY();
+    }
+
+    @FXML
+    public void handleMouseDragged(MouseEvent event) {
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setX(event.getScreenX() - xOffset);
+        stage.setY(event.getScreenY() - yOffset);
     }
 }

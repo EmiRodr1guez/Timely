@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="Timely@3.141.47.195">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.45">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.53">
     <root id="1">
       <DefaultCasing>exact</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1175,40 +1175,40 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </table>
     <column id="301" parent="299" name="shift_id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="302" parent="299" name="user_id">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="303" parent="299" name="clocked_in">
-      <DasType>tinyint(1)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
     </column>
     <column id="304" parent="299" name="start_time">
-      <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="305" parent="299" name="break_start_time">
-      <DasType>datetime|0s</DasType>
       <Position>5</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="306" parent="299" name="break_duration">
-      <DasType>bigint|0s</DasType>
       <Position>6</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="307" parent="299" name="end_time">
-      <DasType>datetime|0s</DasType>
       <Position>7</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="308" parent="299" name="shift_duration">
-      <DasType>bigint|0s</DasType>
       <Position>8</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <index id="309" parent="299" name="PRIMARY">
       <ColNames>shift_id</ColNames>
@@ -1238,19 +1238,19 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="315" parent="300" name="idUserAccounts">
       <AutoIncrement>11</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="316" parent="300" name="Username">
-      <DasType>varchar(60)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(60)|0s</StoredType>
     </column>
     <column id="317" parent="300" name="Password">
-      <DasType>varchar(60)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(60)|0s</StoredType>
     </column>
     <index id="318" parent="300" name="PRIMARY">
       <ColNames>idUserAccounts</ColNames>

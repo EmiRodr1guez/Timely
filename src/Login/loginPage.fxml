@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="rootLogIn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="604.0" styleClass="loginRoot, transparentPane" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LOGIN_CONTROLLER">
+<BorderPane fx:id="rootLogIn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="604.0" styleClass="loginRoot, transparentPane" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LOGIN_CONTROLLER">
    <right>
       <AnchorPane prefHeight="380.0" prefWidth="250.0" style="-fx-background-color: #48426b;" styleClass="right-pane" stylesheets="@../style.css" BorderPane.alignment="CENTER">
          <children>
@@ -41,12 +41,12 @@
                   <String fx:value="text-box" />
                   <String fx:value="text" />
                </styleClass></PasswordField>
-            <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="297.0" onAction="#loginButtonAction" prefHeight="31.0" prefWidth="168.0" styleClass="btn_home" stylesheets="@../style.css" text="Login" textFill="WHITE">
+            <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="297.0" onAction="#loginButtonAction" prefHeight="31.0" prefWidth="168.0" styleClass="btn_register" stylesheets="@../style.css" text="Login" textFill="WHITE">
                <font>
                   <Font name="Montserrat Medium" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="cancelButton" alignment="CENTER" contentDisplay="CENTER" layoutX="246.0" layoutY="6.0" onAction="#cancelButtonOnAction" prefHeight="31.0" prefWidth="30.0" styleClass="btn_home" stylesheets="@../style.css" text="x" textFill="WHITE">
+            <Button fx:id="cancelButton" alignment="CENTER" contentDisplay="CENTER" layoutX="246.0" layoutY="6.0" onAction="#cancelButtonOnAction" prefHeight="31.0" prefWidth="30.0" styleClass="btn_active" stylesheets="@../style.css" text="x" textFill="WHITE">
                <font>
                   <Font name="Montserrat Medium" size="12.0" />
                </font>
